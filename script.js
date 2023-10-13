@@ -2,14 +2,7 @@ function calculateMinCost() {
   const ropeLengthsInput = document.getElementById('rope-lengths');
   const resultDiv = document.getElementById('result');
   const ropeLengths = ropeLengthsInput.value.split(',').map(Number);
-  if (ropeLengths.length < 2) {
-    resultDiv.textContent = "Please enter at least two rope lengths.";
-    return;
-}  
-
-
-  let ans = 
-	 resultDiv.innerText = findMinCostRopes(ropeLengths);;
+  let ans =  resultDiv.innerText = findMinCostRopes(ropeLengths);;
 }
 
 function findMinCostRopes(arr) {
